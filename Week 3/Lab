@@ -1,4 +1,6 @@
 NO USING SCANF(); this week, let's go
+_____________________________________________________________________________________________________________________
+IF FUNCTION TESTING
 
 // if x times y is  not equal to 0, else if x is equal to 1, else if x is equal to 2. Can extend with arguments later
 
@@ -40,5 +42,30 @@ int main()  {
         x = x + 1;
     }
     printf("%d", x);
+}
+______________________________________________________________________________________________________________________
+
+Beginning of while function testing
+
+// while the x value is greater than 0, decrement by 1 until the number reaches 0 then print x
+
+#include <stdio.h>
+int main()  {
+    int x = 1000;
+    while(x > 0)    {
+        x = x - 1;
+    }
+    printf("%d", x);
+}
+
+// To watch the decrementing process (view below)
+
+#include <stdio.h>
+int main()  {
+    int x = 1000;
+    while(x > 0)    {
+        x = x - 1;
+        printf("%d\n", x);
+    }
 }
 
