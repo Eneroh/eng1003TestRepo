@@ -1,1 +1,14 @@
+NO USING SCANF(); this week, let's go
 
+#include <stdio.h>
+int main()  {
+    int x = 1;
+    if(x * y == 0)  {
+        // stuff
+    } else if(x == 1)   {
+        // stuff
+    } else if(x == 2)   {
+        // stuff
+    }
+    printf("%d", "%f", x)
+}
