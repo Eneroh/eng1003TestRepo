@@ -93,3 +93,33 @@ int main()  {
     }
 }
 
+#include <stdio.h>
+// xn = xn-1 + d
+// incrementation by 2
+
+int main()  {
+    //first two in sequence
+    float x0 = 1.0;
+    float x1 = 2.0;
+    int count = 0;
+
+    float xn = x0; // this is our working value
+    float xnm1 = x1; // this is our other worker
+
+    // calculate k in the program
+    float k = x0 / x1;
+
+    // print the initial values
+    printf("%f \n%f \n", x0, x1);
+
+
+    // print the rest of the first ten numbers - we have already printed two
+    count = count + 2;
+    while (count < 10)
+    {
+        xn = k * xnm1;
+        printf("%f \n", xn);
+        xnm1 = xn;
+        count++;
+    }
+    
