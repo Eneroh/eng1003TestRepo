@@ -95,7 +95,22 @@ int main()  {
 // xn = xn-1 + d
 // incrementation by 2
 
+int main()  {#include <stdio.h>
+
 int main()  {
+    int n = 2;
+    int x1 = 2;
+    int xn = 0;
+    int S = 0;
+    int count = 0;
+    while(count < 10)   {
+        printf("%d\n", S);
+        S = 0.5*n*(x1 + xn);
+        xn = xn + S;
+        count++;
+    }
+}
+
     //first two in sequence
     float x0 = 1.0;
     float x1 = 2.0;
@@ -121,3 +136,18 @@ int main()  {
         count++;
     }
     
+#include <stdio.h>
+
+int main()  {
+    int n = 2;
+    int x1 = 2;
+    int xn = 0;
+    int S = 0;
+    int count = 0;
+    while(count < 10)   {
+        printf("%d\n", S);
+        S = 0.5*n*(x1 + xn);
+        xn = xn + S;
+        count++;
+    }
+}
