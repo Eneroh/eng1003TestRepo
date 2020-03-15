@@ -83,10 +83,10 @@ int main()  {
     int xn = 0;
     int count = 0;
     d = x2 - x1;
-while(count < 10) {
-    printf("%d\n", xn);
-    xn = xn + d;
-    count++;
+    while(count < 10) {
+        printf("%d\n", xn);
+        xn = xn + d;
+        count++;
     }
 }
 
