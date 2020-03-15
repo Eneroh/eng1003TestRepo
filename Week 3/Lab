@@ -80,18 +80,16 @@ int main()  {
     int x1 = 0;
     int x2 = 2;
     int d;
-    int xn;
-    int xnm1 = x2;
+    int xn = 0;
     int count = 0;
     d = x2 - x1;
-    //xn = d;
-    while(count < 10) {
-        xn = xnm1 + d;
-        xnm1 = xn;
-        printf("%d\n", xn);
-        count = count + 1;
+while(count < 10) {
+    printf("%d\n", xn);
+    xn = xn + d;
+    count++;
     }
 }
+
 
 #include <stdio.h>
 // xn = xn-1 + d
