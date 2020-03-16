@@ -72,6 +72,23 @@ ________________________________________________________________________________
 
 Artrithmetic Sequence
 
+// Really simple fibonacci sequence but using slightly more code than typical?
+
+#include <stdio.h>
+
+int main()  {
+    int xn = 0;
+    int xnm1 = 0;
+    int xnm2 = 2;
+    int count = 0;
+    while(count < 10)   {
+    printf("%d\n", xn);
+    xn = xnm1 + xnm2;
+    xnm2 = xnm1;
+    xnm1 = xn;
+    count++;
+    }
+}
 #include <stdio.h>
 // xn = xn-1 + d
 // incrementation by 2
@@ -90,10 +107,24 @@ int main()  {
     }
 }
 
+// (Same code just done slightly differently)
 
-#include <stdio.h>
-// xn = xn-1 + d
-// incrementation by 2
+int main()  {
+    int x1 = 0;
+    int x2 = 2;
+    int xn = x2;
+    int xnm1 = x1;
+    int d = xn - xnm1;
+    int count = 0;
+    while(count < 10)   {
+        xn = xnm1 + d;
+        xnm1 = xn;
+        printf("%d\n", xn);
+        count++;
+    }
+}
+
+// Power formula, just annoyingly extended
 
 int main()  {#include <stdio.h>
 
