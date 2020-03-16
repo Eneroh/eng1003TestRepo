@@ -126,7 +126,7 @@ int main()  {
 
 // Power formula, just annoyingly extended
 
-int main()  {#include <stdio.h>
+#include <stdio.h>
 
 int main()  {
     int n = 2;
@@ -182,3 +182,24 @@ int main()  {
         count++;
     }
 }
+
+// Arithmetic sequence numero 3
+// xn controls the starting figure while xnm1 multiplies value by value
+
+#include <stdio.h>
+
+int main()  {
+    int xn = 10;
+    int xnm1 = 10;
+    int k = xn / xnm1;
+    int count = 0;
+    while(count < 10)   {
+        xn = k*xnm1;
+        k = xn;
+        printf("%d\n", xn);
+        count++;
+    }
+}
+
+// Arithmetic sequence number 4
+
