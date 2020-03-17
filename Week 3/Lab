@@ -124,6 +124,20 @@ int main()  {
     }
 }
 
+// (same code just written differently again)
+
+int main()    {
+    int xn = 0;
+    int xnm1 = 2;
+    int d = xn - xnm1;
+    int count = 0;
+    while(count < 10)   {
+        xn = xnm1 + d;
+        d = xn;
+        printf("%d\n", xn);
+        count++;
+    }
+}
 // Power formula, just annoyingly extended
 
 #include <stdio.h>
@@ -142,6 +156,21 @@ int main()  {
     }
 }
 
+//Code initiates a weird multiplication timestable where x1 is handles the main number while xn is added to the total
+
+int main()  {
+    int sn = 0;
+    int n = 2;
+    int x1 = 10;
+    int xn = 2;
+    int count = 0;
+    while(count < 10)   {
+        printf("%d\n", sn);
+        sn = 0.5*n*(x1 + xn);
+        xn = sn;
+        count++;
+    }
+}
     //first two in sequence
     float x0 = 1.0;
     float x1 = 2.0;
