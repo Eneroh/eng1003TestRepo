@@ -1,1 +1,12 @@
+// First lab question
 
+int main()  {
+    float x0 = 0.65, xnm1 = x0, xn = 0.2*xnm1+5;
+    int n = 1;
+        printf("%d %f\n", n, xn);
+    while(n < 10)   {
+        xn = xnm1 + xn;
+        n++;
+        printf("%d %f\n", n, xn);
+    }
+}
