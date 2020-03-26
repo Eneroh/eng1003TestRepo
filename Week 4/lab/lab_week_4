@@ -1,5 +1,6 @@
 // First lab question
 
+// my attempt
 int main()  {
     float x0 = 0.65, xnm1 = x0, xn = 0.2*xnm1+5;
     int n = 1;
@@ -9,4 +10,20 @@ int main()  {
         n++;
         printf("%d %f\n", n, xn);
     }
+}
+
+// real answer in my formatting
+
+int main()  {
+    float x0 = 0.65, xnm1 = x0, xn, diff = 1;
+    int n = 0;
+        printf("%d %f\n", n, x0);
+    while(diff  > 0.001 && n < 9)   {
+        xn = 0.2*xnm1+5;
+        diff = xn - xnm1;
+        xnm1 = xn;
+        n++;
+        printf("%d %f\n", n, xn);
+    }
+    return 0;
 }
