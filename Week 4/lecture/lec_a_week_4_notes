@@ -1,0 +1,86 @@
+// From lecture a, slide 9
+// switch example
+
+int main()  {
+    int x = 1, y = 2;
+
+    switch(x == y)  {
+        case 0:
+            printf("x and y differ\n");
+            break;
+        case 1:
+            printf("x and y are equal\n");
+            break;
+        default:
+            printf("Something went very wrong\n)");
+    }
+}
+
+int main()  {
+    int x = 2;
+    switch(x)   {
+        case 1: printf("x is 1\n");
+        case 2: printf("x is 2\n");
+        case 3: printf("x is 3\n");
+        default: printf("x is not 1, 2, or 3\n");
+    }
+    return 0;
+}
+
+//research into rand()
+// i is less than 5 therefore increment integer and print random intcrementations?
+// I'm not entirely sure, will need more information
+// What I posted is exactly what it does
+
+int main()  {
+    for(int i = 0; i<5; i++) 
+        printf(" %d ", rand()); 
+}
+
+// exploring square root, square root called like x = sqrtf(int/float/whatever);
+// self-explanatory
+
+int main()  {
+    int x = 4;
+    float y = sqrtf(x);
+    printf("%f", y);
+}
+
+// developing understanding of void, essentially prints random numbers. However void doesn't provide any return value?
+// or is used as such, rather strange, regardless, output is still present and prints a value. Investigate further.
+
+int main()  {
+    int rand(void);
+    printf("%d", rand);
+}
+
+// Testing out functions, having to write them within the same document, have to put int name before main.
+
+int isEven(int x)   {
+    if(x % 2 == 0)
+        return 1;
+    else
+        return 0;
+}
+
+int isEven(int x);
+int main()  {
+   printf("%d\n", isEven(1));
+   printf("%d\n", isEven(2));
+}
+
+// Determining square root via a function in c
+
+float mySqrt(float k);
+int main()  {
+    printf("sqrt(26) = %f\n", mySqrt(26.0));
+}
+
+float mySqrt(float k)   {
+    int n;
+    float xn = k/2.0;
+    for(n = 0; n < 10; n++)
+        xn = 0.5*(xn + k / xn);
+}
+
+Week 4 a Lecture notes over
