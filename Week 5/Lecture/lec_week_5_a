@@ -1,1 +1,17 @@
+// Lab 5 start (at slide 5, lab wk 4 b?)
+#include <stdio.h>
 
+float mySqrt(float k);
+
+int main()  {
+    int x = 4;
+    printf("mySqrt(4) = %f\nsqrtf(4) = %f\n", mySqrt(x), sqrtf(x));
+}
+
+float mySqrt(float k)   {
+    int n;
+    float xn = k/2.0;
+    for(n = 0; n < 10; n++)
+        xn = 0.5*(xn + k/xn);
+    return xn;
+}
