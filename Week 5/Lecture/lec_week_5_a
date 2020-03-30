@@ -15,3 +15,24 @@ float mySqrt(float k)   {
         xn = 0.5*(xn + k/xn);
     return xn;
 }
+
+// Function for testing prime numbers
+
+#include <stdio.h>
+
+int isPrime(int num);
+
+    int main()  {
+        int x = 10;
+        if(isPrime(x))
+            printf("%d is prime\n", x);
+        else
+            printf("%d is not prime\n", x);
+    }
+int isPrime(int num)    {
+    int count;
+    for(count = 2; count < num; count++)    {
+        if(num % count == 0)
+            return 0;
+    }
+}
