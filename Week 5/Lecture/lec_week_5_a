@@ -17,7 +17,7 @@ float mySqrt(float k)   {
 }
 
 // Function for testing prime numbers
-
+s when
 #include <stdio.h>
 
 int isPrime(int num);
@@ -36,3 +36,43 @@ int isPrime(int num)    {
             return 0;
     }
 }
+// static variables always occupies same memory address meaning value is retained, something within a function
+// that remembers when it was called (RAND)
+
+#include <stdio.h>
+
+int counter(void);
+
+int main()  {
+    printf("%d\n",counter());
+    printf("%d\n",counter());
+    printf("%d\n",counter());
+    printf("%d\n",counter());
+    printf("%d\n",counter());
+    printf("%d\n",counter());
+    printf("%d\n",counter());
+}
+
+int counter(void)   {
+    static int count = 0;
+    return ++count;
+}
+
+//Same thing just smarter and more efficient
+
+#include <stdio.h>
+
+int counter(void);
+
+int main()  {
+    for(int k = 0; k < 10; k++)
+        printf("counter(): %d\n", counter());
+    return 0;
+}
+
+int counter(void)   {
+    static int count = 0;
+    return ++count;
+}
+
+// 
